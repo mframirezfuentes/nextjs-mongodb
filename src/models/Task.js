@@ -24,4 +24,4 @@ const taskSchema= new Schema({
     versionKey : false
 })
 
-export default model("Task", taskSchema)
+export default models.Task || model("Task", taskSchema)
